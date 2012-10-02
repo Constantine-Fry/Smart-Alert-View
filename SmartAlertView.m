@@ -38,6 +38,7 @@
 - (id)initWithView:(UIView*)view andTitle:(NSString*)title withTarget:(id)target andAction:(SEL)action{
 	if (self = [super initWithTitle:title message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok",nil]) {
 		[self addSubview:view];
+        self.backgroundColor = [UIColor redColor];
 		delegate_ = target;
 		selector_ = action;
 		view_ = view;
